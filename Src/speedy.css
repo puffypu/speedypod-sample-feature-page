@@ -441,3 +441,24 @@ body {
   color: #ffffff;
   font-family: Roboto, sans-serif;
 }
+@media (max-width: 768px) {
+  .first-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-content,
+  .image-content {
+    flex: unset;
+    width: 100%;
+  }
+
+  .image-content img {
+    margin-top: 1rem;
+  }
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
